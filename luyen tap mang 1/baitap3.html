@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <input id="nhap" type="text">
+    <button onclick="result()">Result</button>
+</head>
+<body>
+<script>
+    let a = [];
+
+    function result(){
+        let b = +document.getElementById("nhap").value ;
+        let c = "" ;
+        let sum = 0;
+        let count = 0;
+        a.push(b);
+        let max = a[0];
+        console.log(a);
+        for (let i = 0; i < a.length; i++) {
+            sum += a[i]
+            count++
+            if (a[i] > max) {
+                max = a[i]
+                c = a.indexOf(a[i])
+            }
+        }
+        console.log(`giá trị lớn nhất trong mảng là: ${max}`);
+        console.log(`vị trí trong mảng là: ${c}`);
+        console.log(`trung bình các phần tử trong mảng là: ${sum/count}`)
+    }
+</script>
+</body>
+</html>

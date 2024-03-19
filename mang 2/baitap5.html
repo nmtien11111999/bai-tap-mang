@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = [] ;
+    let number2 = [] ;
+
+    for (let i = 0; i < 3; i++) {
+        let a = prompt("nhập chuỗi đầu");
+        number1.push(a)
+    }
+    for (let i = 0; i < 3; i++) {
+        let b = prompt("nhập chuỗi cuối");
+        number2.push(b)
+    }
+
+    for (let i = 0; i < number1.length; i++) {
+        console.log(number1[i])
+    }
+    for (let i = 0; i < number2.length; i++) {
+        console.log(number2[i])
+    }
+    for (let i = 0; i < number1.length; i++) {
+        for (let j = 0; j < number2.length; j++) {
+            if (number1[i] == number2[j]) {
+                console.log("đây là số giống nhau: " + number1[i])
+            }
+            else {
+                console.log("những số còn lại không giống nhau")
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

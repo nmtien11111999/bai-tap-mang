@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="nhanvao()">click</button>
+<p id="result"></p>
+<script>
+
+
+    function nhanvao() {
+        let vietnamese = ["ngu", "điên", "đáng sợ"];
+        let english = ["noob", "crazy", "scare"];
+        let nhapinput = document.getElementById("nhap").value;
+        for (let i = 0; i < vietnamese.length; i++) {
+            if (nhapinput == vietnamese[i]) {
+                document.getElementById("result").innerHTML = "result" + english[i]
+            } else if (nhapinput == english[i]) {
+                document.getElementById("result").innerHTML = "result" + vietnamese[i]
+            }
+        }
+    }
+</script>
+</body>
+</html>

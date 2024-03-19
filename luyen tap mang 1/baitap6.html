@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [1, 32 ,56 ,45 ,67, 25, 49, 7, 29, 10];
+    let a = +prompt("nhập vào số cần tìm");
+    let b = false
+    for (let i = 0; i < num.length; i++) {
+        if (a == num[i]) {
+            a = num[i]
+            b = true
+        }
+    }
+    if (b) {
+        alert(a + " is in the num")
+    } else {
+        alert(a + " is not in the num")
+    }
+
+</script>
+</body>
+</html>

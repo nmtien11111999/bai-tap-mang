@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let array = [];
+    let a = prompt("nhap vao a")
+    for (let i = 0; i < a.length; i++) {
+        array.push(a[i]);
+    }
+console.log(array)
+
+    // cách 1
+
+    // for (let d = 0; d < array.length / 2; d++) {
+    //     let b = array[d];
+    //     array[d] = array[array.length - 1 - d];
+    //     array[array.length - 1 - d] = b;
+    // }
+    //
+    // console.log(array)
+
+    // cách 2
+
+// console.log(array.reverse())
+</script>
+</body>
+</html>

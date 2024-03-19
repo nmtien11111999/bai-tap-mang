@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea onkeydown="demo(event)" id="nhap"></textarea>
+<script>
+    let arr = ["t" , "o" , "i" , " " , "đ" , "a" , "u"]
+    let index = 0;
+    function demo() {
+        event.preventDefault();  // không cho phép nhập vào từ bàn phím
+        document.getElementById("nhap").value += arr[index];
+        index++
+        if (index > arr.length) {
+            index = 0 ;
+            document.getElementById("nhap").value = "" ;
+        }
+    }
+</script>
+</body>
+</html>
